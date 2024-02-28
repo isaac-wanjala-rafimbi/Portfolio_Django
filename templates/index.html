@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+{% load static %}
+<link rel="stylesheet" href="{% static 'mystyle.css'%}">
+<script src="https://kit.fontawesome.com/f674a7878b.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm" id="navI">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{%static 'images/logo1.png'%}" alt="Avatar Logo" width="170" height="100"> 
+          </a>
+        
+        <ul id="modify" class="navbar-nav nav-menu " > 
+            <li class="nav-item"> 
+                <a class="nav-link" href="#about_me"> 
+                  About
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="#skills"> 
+                  Skills
+                </a> 
+            </li> 
+            <!--<li class="nav-item"> 
+                <a class="nav-link" href="#experience"> 
+                  Experience
+                </a> 
+            </li> -->
+            <li class="nav-item"> 
+                <a class="nav-link" href="#projects"> 
+                  Projects
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link" href="#testimonial"> 
+                  Testimonials
+                </a> 
+            </li>
+            <li class="nav-item"> 
+                <a class="nav-link" href="#contacts"> 
+                  Contacts
+                </a> 
+            </li>             
+        </ul> 
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </div>
+      </nav> 
+
+ <section>
+    <div  id="about_me"  class="container-fluid">
+        <div class="container">
+         <div   id="attribute" class="row">
+             <div id="bio" class="col-sm-6">
+                <h1>Hello, I'm <span>Isaac Rafimbi</span></h1>
+                <p>
+                I am a web developer and content writer who combines technical proficiency with creative storytelling. I create user-friendly, SEO-optimized websites that engage target audiences. As a content writer, I distill complex ideas into compelling, informative content that resonates with readers.
+                  I stay updated with the latest industry trends to keep your projects at the forefront of the digital landscape.</p> <br>
+                  
+                <button class="download">Download Resume</button>
+
+             </div>
+             <div id="photo" class="col-sm-6">
+                 <img src="{%static 'images/myphoto.jpeg'%}" id="mboto" alt="myphoto" width="350" height="350">
+             </div>
+            
+           </div>
+        </div>
+        
+       </div>
+       <div class="container-fluid" id="skills">
+         <div class="container" id="section2">
+             <h1>Skills </h1>
+             <div class="row" id="frontend">
+                 <div class="col-sm-6">
+                     <h4>Front End Web Development</h4>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="icons">
+                         <div class="icon-container">
+                             <i class="fa-brands fa-html5 icon" style="color: #d35017;"></i>
+                             <p>Html</p>
+                         </div>
+                         <div class="icon-container">
+                             <i class="fa-brands fa-bootstrap icon" style="color: #6c1d91;"></i>
+                             <p>Bootstrap</p>
+                         </div>
+                         <div class="icon-container">
+                             <i class="fa-brands fa-css3-alt icon" style="color: #2352a4;"></i>
+                             <p>Css</p>
+                         </div>
+                         
+                         <div class="icon-container">
+                             <i class="fa-brands fa-js icon" style="color: #f2740d;"></i>
+                             <p>JavaScript</p>
+                         </div>
+                     </div>
+                     
+                 </div>
+ 
+ 
+ 
+             </div>
+             <div class="row" id="backend">
+                 <div class="col-sm-6">
+                     <h4>Back-End Web Development</h4>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="icons">
+                         <div class="icon-container">
+                             <i class="fa-brands fa-python icon" style="color: #1d4b9a;"></i>
+                             <p>Python</p>
+                         </div>
+                         <div class="icon-container">
+                            <img src="{%static 'images/django.png'%}" class="icon" alt="">
+                             <p>Django</p>
+                         </div>
+                         <div class="icon-container">
+                             <img src="{%static 'images/sql.png'%}" class="icon" alt="">
+                             <p>SQL</p>
+                         </div>                       
+                       
+                     </div>
+                 </div>
+ 
+             </div>
+             <div class="row">
+                 <div class="col-sm-6">
+                     <h4>Wordpress</h4>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="icons">
+                         <div class="icon-container">
+                             <i class="fa-brands fa-wordpress icon" style="color: #1d76b9;"></i>
+                             <p>Worpress</p>
+                         </div>
+                     </div>
+                 </div>
+ 
+             </div>
+             <h4>Technical Writing</h4>
+             </div>
+            </div>
+          </div>
+         
+           
+       <div class="container-fluid" id="projects">
+           <div class="container my-footer">
+            <h1>Projects</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 each">
+                <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                    <h5 class="card-title">Swift Moov App</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 each">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wellness Haven</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
+                </div>
+                </div>
+            </div>
+            <div class="col  ">
+                <div class="card h-100 each">
+                <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100" >
+                <div class="card-body">
+                    <h5 class="card-title">Projo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
+                </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 each">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col  ">
+                <div class="card h-100 each">
+                    <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col  ">
+                <div class="card h-100 each">
+                
+                </div>
+            </div>
+                </div>
+  </div>
+</div>
+         </div>
+       </div>
+       <div class="container" id="testimonial">
+             <h1 id="testimonial">Testimonials</h1>
+              <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+             
+             <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <div class="row">
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/3.jpg">
+                                     <h2>Jesicca Doe</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/5.jpg">
+                                     <h2>Claire Chedd</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/2.jpg">
+                                     <h2>Maria Lopez</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="carousel-item">
+                     <div class="row">
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/1.jpg">
+                                     <h2>Jesicca Doe</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/2.jpg">
+                                     <h2>Claire Chedd</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/3.jpg">
+                                     <h2>Mary Joe</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="carousel-item">
+                     <div class="row">
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/4.jpg">
+                                     <h2>Jesicca Doe</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/5.jpg">
+                                     <h2>Claire Chedd</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-4">
+                             <div class="card">
+                                 <div class="box front">
+                                     <img alt="" src="img/6.jpg">
+                                     <h2>Mary Joe</h2>
+                                     <h4>CEO, Microsoft</h4>
+                                     <p class="socials">
+                                         <i class="fa fa-facebook"></i>
+                                         <i class="fa fa-twitter"></i>
+                                         <i class="fa fa-linkedin"></i>
+                                         <i class="fa fa-youtube"></i>
+                                     </p>
+                                 </div>
+                                 <div class="box back">
+                                     <span class="fa fa-quote-left"></span>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>			
+ 
+ 
+         </div>
+     
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+             </script> 
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js">
+             </script> 
+ </section>
+       
+    <script src="script.js"></script>   
+    
+    
+    <footer  class="bd-footer py-4" >
+        <div class="container ">
+             <div class="row ">
+                                       <div class="col-sm-4 text-center">
+
+                                        <div class="footer-section1">
+                                            <img src="{%static 'images/logo1.png'%}" alt="" width="170" height="100">
+                                                    <div class="contact">
+                                                        <span><i class="fa fa-phone" ></i>&nbsp; 0768764442</span><br>
+                                                        <span><i class="fa fa-envelope" ></i>&nbsp; isaacralph982@gmail.com</span>
+                                                    </div>
+                                                    <div class="social">
+                                                        <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+                                                        <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+                                                        <a href=""><i class="fa fa-linkedin fa-lg"></i></a>
+                                                        <a href=""><i class="fa fa-github fa-lg"></i></a>
+                                                        <a href=""><i class="fa fa-instagram fa-lg"></i></a>
+                                                    </div>
+                                           </div>
+                                       </div>
+
+
+                            <div class="col-sm-4 text-center">
+                                <div class=" footer-section1">
+                                    <h2>Quick Links</h2>
+                                    <div class="quicklinks">
+                                    <p> <a href="#about_me" > <i class="fas fa-user quickitem"></i> <span> About</span></a></p>
+                                    <p> <a href="#about_me">  <i class="fas fa-gears"></i> <span> Skills</span></a></p>
+                                    <p> <a href="#about_me"> <i class="fas fa-book-open"></i> <span>Projects</span></a></p>
+                                    <p> <a href="#about_me"> <i class="fas fa-comments"></i> <span>Testimonials</span>s</a></p>
+                                    <p> <a href="#about_me"> <i class="fas fa-file"></i> Download resume</a></p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+
+                     <div class="col-sm-4 text-center">
+                        <div class="footer-section1 jaza">
+                                    <h1>Get in Touch</h1>
+                                <form>
+                                    <fieldset class="form-group">
+                                        <input type="email" class="form-control attribute" id="exampleInputEmail1" placeholder="Enter email">
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <textarea class="form-control attribute" id="exampleMessage" placeholder="Message"></textarea>
+                                    </fieldset>
+                                    <fieldset class="form-group text-xs-right">
+                                        <button class="btn btn-primary download" type="submit">Send Message</button>
+                                    </fieldset>
+                                </form>
+                       </div>                    
+                     </div>
+             </div>
+         </div>
+   </footer>
+   
+</body>
+</html>
+
+
