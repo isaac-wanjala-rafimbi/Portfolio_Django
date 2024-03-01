@@ -1,0 +1,19 @@
+{%extends 'adminPage.html'%}
+{% load static%}
+
+{%block content%}
+<section id="about_section">
+    <h2>About Section</h2>
+    <form method="post" action=""  enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2 style="margin-top: 35px;">About Me</h2>
+        {{ about_form.as_p }}
+        <h2>Skills</h2>
+        {{ skill_form.as_p }}
+        <h2>Contact Information</h2>
+        {{ contact_form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</section>
+
+{%endblock content%}

@@ -1,0 +1,120 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{about_form}}
+         
+            {{project_form }}
+            {{testimonial_form }}
+            {{skill_form }}
+            {{contact_form}}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>My Portfolio</title>
+    {% endblock title %}
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+   
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Brand</h1>
+        </div>
+        <ul>
+            <li><a href="{%url 'about'%}"><img src="dashboard (2).png" alt="">&nbsp; <span>About</span></a></li>
+            <li><a href="{%url 'projects'%}"><img src="reading-book (1).png" alt="">&nbsp;<span>Projects</span></a></li>
+            <li><a href="{%url 'testimonial'%}"><img src="teacher2.png" alt="">&nbsp;<span>Testimonial</span></a></li>
+            
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="notifications.png" alt="">
+                    <div class="img-case">
+                        <img src="user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%block content%}
+        <section id="about_section">
+            <h2>About Section</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ about_form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        
+        <section id="project_section">
+            <h2>Project Section</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ project_form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        
+        <section id="testimonial_section">
+            <h2>Testimonial Section</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ testimonial_form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        
+        <section id="skill_section">
+            <h2>Skill Section</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ skill_form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        
+        <section id="contact_section">
+            <h2>Contact Section</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ contact_form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+        </section>
+        
+        <section id="help_section">
+            <!-- Add your help content here -->
+        </section>
+        
+        <section id="settings_section">
+            <!-- Add your settings content here -->
+        </section>
+
+        {%endblock content%}
+        
+    </div>
+</body>
+</html>

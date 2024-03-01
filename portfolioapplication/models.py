@@ -3,7 +3,8 @@ from django.db import models
 # Create your models here.
 class About(models.Model):
     about_text = models.TextField()
-    about_photo = models.ImageField(upload_to='about_photos/')
+    about_photo = models.ImageField(null=True, blank=True)
+    resume = models.FileField(null=True, blank=True)
 
     def __str__(self):
         return "About Section"

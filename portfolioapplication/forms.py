@@ -4,7 +4,7 @@ from .models import About, Project, Testimonial, Skill, Contact
 class AboutForm(forms.ModelForm):
     class Meta:
         model = About
-        fields = ['about_text', 'about_photo']
+        fields = "__all__"
 
 class ProjectForm(forms.ModelForm):
     class Meta:

@@ -1,0 +1,15 @@
+{%extends 'adminPage.html'%}
+{% load static%}
+
+{%block content%}
+<section id="testimonial_section">
+    <h2 >Testimonial Section</h2>
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2 style="margin-top: 35px;">Add a Testimonial</h2>
+        {{ testimonial_form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</section>
+
+{%endblock content%}
