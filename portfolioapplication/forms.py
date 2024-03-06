@@ -9,12 +9,12 @@ class AboutForm(forms.ModelForm):
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
-        fields = ['project_photo', 'name', 'project_link', 'readmore_link']
+        fields = ['project_photo', 'name', 'project_link']
 
 class TestimonialForm(forms.ModelForm):
     class Meta:
         model = Testimonial
-        fields = ['testimonial_photo', 'name', 'position', 'testimonial_message', 'social_link_facebook', 'social_link_twitter', 'social_link_linkedin', 'social_link_instagram']
+        fields =  "__all__"
 
 class SkillForm(forms.ModelForm):
     class Meta:

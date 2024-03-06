@@ -2,14 +2,28 @@
 {% load static%}
 
 {%block content%}
-<section id="testimonial_section">
-    <h2 >Testimonial Section</h2>
-    <form method="post" action="" enctype="multipart/form-data">
-        {% csrf_token %}
-        <h2 style="margin-top: 35px;">Add a Testimonial</h2>
-        {{ testimonial_form.as_p }}
-        <input type="submit" value="Save">
-    </form>
-</section>
+<section id="about_section">
+    <h2 >About Me</h2>
+    <div  id="about_me"  class="container-fluid">
+        <div class="container">
+         <div   id="attribute" class="row">
+             <div id="bio" class="col-sm-6">
+                <form method="post" action=""  enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <h2 style="margin-top: 35px;">Add a Testimonial</h2>
+                    {{ testimonial_form.as_p }}
+                    <input type="submit" value="Save">
+                </form>
+             </div>
+            
+           </div>
+        </div>
+        
+       </div>   
+    </section>
+
+
+
+
 
 {%endblock content%}

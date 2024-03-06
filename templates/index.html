@@ -6,10 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 {% load static %}
 <link rel="stylesheet" href="{% static 'mystyle.css'%}">
 <script src="https://kit.fontawesome.com/f674a7878b.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
                 </a> 
             </li> 
             <li class="nav-item"> 
-                <a class="nav-link" href="#skills"> 
+                <a class="nav-link" href="#skill"> 
                   Skills
                 </a> 
             </li> 
@@ -73,7 +73,7 @@
                 I am a web developer and content writer who combines technical proficiency with creative storytelling. I create user-friendly, SEO-optimized websites that engage target audiences. As a content writer, I distill complex ideas into compelling, informative content that resonates with readers.
                   I stay updated with the latest industry trends to keep your projects at the forefront of the digital landscape.</p> <br>
                   
-                <button class="download">Download Resume</button>
+                <button class="download" > <a href="{%static 'images/resume.pdf'%}" class="download">Download Resume</a></button>
 
              </div>
              <div id="photo" class="col-sm-6">
@@ -84,7 +84,7 @@
         </div>
         
        </div>
-       <div class="container-fluid" id="skills">
+      <!-- <div class="container-fluid" id="skills">
          <div class="container" id="section2">
              <h1>Skills </h1>
              <div class="row" id="frontend">
@@ -157,141 +157,216 @@
              <h4>Technical Writing</h4>
              </div>
             </div>
-          </div>
+          </div> -->
+
+           <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <p class="mb-4">Over the years, I have acquired a set of skills in Web development and other fields. The following are some of the skills I exhibit:</p>
+                    <h3 class="mb-4">My Skills</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped" style="width: 95%"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CSS</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-info" style="width: 85%"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Bootstrap</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped " style="width: 90%; background-color:  rgb(144, 238, 144);"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Javascript</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped " style="width: 80%; background-color: purple;"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Python</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-success" style="width: 90%"></div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Blogging</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-secondary" style="width: 90%"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Django</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped " style="width: 90%; background-color: hsl(270, 100%, 70%)"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Django Rest Framework</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 90%"></div>
+                                  </div>
+                            </div>
+                            
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Technical Writing</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped " style="width: 90%; background-color:#3F51B5;"></div>
+                                  </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped bg-danger" style="width: 85%"></div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Web Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022-2023</p>
+                                    <h6 class="mb-0">Alupe University</h6>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Computer Science</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2019 - 2023</p>
+                                    <h6 class="mb-0">Kibabii University</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Full Stack Web development and AI with Python (Django)</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022 - 2023</p>
+                                    <h6 class="mb-0">Udemy</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
          
            
        <div class="container-fluid" id="projects">
            <div class="container my-footer">
             <h1>Projects</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100 each">
-                <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100">
-                <div class="card-body">
-                    <h5 class="card-title">Swift Moov App</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
-                </div>
+                                   {%for project_form in project_form%}
+                                    <div class="col">
+                                <div class="card h-100 each">
+                                <img src="{{project_form.imageURL}}" class="card-img-top" alt="..." width="100" height="100">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{project_form.name}}</h5>
+                                    <p class="card-text">{{project_form.project_link}}</p>
+                                </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        
+          
+            </div>
+        </div>
+      </div> 
+      
+      <div class="container" id="testimonial">
+        <h1 id="testimonial">Testimonials</h1>
+         <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    {%for testimonial in testimonial|slice:":3"%}
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="box front">
+                                <img alt="" src="{{testimonial.imageURL}}">
+                                <h2>{{testimonial.name}}</h2>
+                                <h4>{{testimonial.position}}</h4>
+                                <p class="socials">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-youtube"></i>
+                                </p>
+                            </div>
+                            <div class="box back">
+                                <span class="fa fa-quote-left"></span>
+                                <p>
+                                    {{testimonial.testimonial_message}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 each">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Wellness Haven</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
-                </div>
-                </div>
-            </div>
-            <div class="col  ">
-                <div class="card h-100 each">
-                <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100" >
-                <div class="card-body">
-                    <h5 class="card-title">Projo</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius eum magni deserunt numquam non temporibus dolor ear</p>
-                </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class="card h-100 each">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                </div>
-            </div>
-            <div class="col  ">
-                <div class="card h-100 each">
-                    <img src="logo1.png" class="card-img-top" alt="..." width="100" height="100">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                </div>
-            </div>
-            <div class="col  ">
-                <div class="card h-100 each">
-                
-                </div>
-            </div>
-                </div>
-  </div>
-</div>
-         </div>
-       </div>
-       <div class="container" id="testimonial">
-             <h1 id="testimonial">Testimonials</h1>
-              <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
-             
-             <div class="carousel-inner">
-                 <div class="carousel-item active">
-                     <div class="row">
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/3.jpg">
-                                     <h2>Jesicca Doe</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/5.jpg">
-                                     <h2>Claire Chedd</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/2.jpg">
-                                     <h2>Maria Lopez</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="carousel-item">
+
+             <div class="carousel-item">
                      <div class="row">
                          <div class="col-lg-4">
                              <div class="card">
@@ -425,10 +500,66 @@
                          </div>
                      </div>
                  </div>
-             </div>			
- 
- 
-         </div>
+            <!--<div class="carousel-item">
+                <div class="row">
+                    {%for testimonial in testimonial|slice:"3:"%}
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="box front">
+                                <img alt="" src="{{testimonial.imageURL}}">
+                                <h2>{{testimonial.name}}</h2>
+                                <h4>{{testimonial.position}}</h4>
+                                <p class="socials">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-youtube"></i>
+                                </p>
+                            </div>
+                            <div class="box back">
+                                <span class="fa fa-quote-left"></span>
+                                <p>
+                                    {{testimonial.testimonial_message}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                        
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    {%for testimonial in testimonial|slice:"3:"%}
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="box front">
+                                <img alt="" src="{{testimonial.imageURL}}">
+                                <h2>{{testimonial.name}}</h2>
+                                <h4>{{testimonial.position}}</h4>
+                                <p class="socials">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-youtube"></i>
+                                </p>
+                            </div>
+                            <div class="box back">
+                                <span class="fa fa-quote-left"></span>
+                                <p>
+                                    {{testimonial.testimonial_message}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                        
+                </div>
+            </div>-->
+        </div>			
+
+
+    </div>
      
              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
              </script> 
@@ -436,7 +567,8 @@
              </script> 
  </section>
        
-    <script src="script.js"></script>   
+    <script src="{%static 'script.js'%}"></script>   
+    <script src="{%static 'main.js'%}"></script>   
     
     
     <footer  class="bd-footer py-4" >
@@ -447,15 +579,15 @@
                                         <div class="footer-section1">
                                             <img src="{%static 'images/logo1.png'%}" alt="" width="170" height="100">
                                                     <div class="contact">
-                                                        <span><i class="fa fa-phone" ></i>&nbsp; 0768764442</span><br>
-                                                        <span><i class="fa fa-envelope" ></i>&nbsp; isaacralph982@gmail.com</span>
+                                                        <span><i class="fa fa-phone" ></i>&nbsp; {{ contact.number }}</span><br>
+                                                        <span><i class="fa fa-envelope" ></i>&nbsp; {{ contact.email }}</span>
                                                     </div>
                                                     <div class="social">
-                                                        <a href=""><i class="fa fa-facebook fa-lg"></i></a>
-                                                        <a href=""><i class="fa fa-twitter fa-lg"></i></a>
-                                                        <a href=""><i class="fa fa-linkedin fa-lg"></i></a>
-                                                        <a href=""><i class="fa fa-github fa-lg"></i></a>
-                                                        <a href=""><i class="fa fa-instagram fa-lg"></i></a>
+                                                        <a href="{{ contact.facebook }}"><i class="fa fa-facebook fa-lg"></i></a>
+                                                        <a href="{{ contact.linkedln }}"><i class="fa fa-twitter fa-lg"></i></a>
+                                                        <a href="{{ contact.linkedln }}"><i class="fa fa-linkedin fa-lg"></i></a>
+                                                        <a href="{{ contact.github }}"><i class="fa fa-github fa-lg"></i></a>
+                                                        <a href="{{ contact.instagram }}"><i class="fa fa-instagram fa-lg"></i></a>
                                                     </div>
                                            </div>
                                        </div>
@@ -466,9 +598,9 @@
                                     <h2>Quick Links</h2>
                                     <div class="quicklinks">
                                     <p> <a href="#about_me" > <i class="fas fa-user quickitem"></i> <span> About</span></a></p>
-                                    <p> <a href="#about_me">  <i class="fas fa-gears"></i> <span> Skills</span></a></p>
-                                    <p> <a href="#about_me"> <i class="fas fa-book-open"></i> <span>Projects</span></a></p>
-                                    <p> <a href="#about_me"> <i class="fas fa-comments"></i> <span>Testimonials</span>s</a></p>
+                                    <p> <a href="#skill">  <i class="fas fa-gears"></i> <span> Skills</span></a></p>
+                                    <p> <a href="#projects"> <i class="fas fa-book-open"></i> <span>Projects</span></a></p>
+                                    <p> <a href="#portfolio"> <i class="fas fa-comments"></i> <span>Testimonials</span></a></p>
                                     <p> <a href="#about_me"> <i class="fas fa-file"></i> Download resume</a></p>
                                     
                                     </div>
@@ -495,6 +627,7 @@
              </div>
          </div>
    </footer>
+   
    
 </body>
 </html>

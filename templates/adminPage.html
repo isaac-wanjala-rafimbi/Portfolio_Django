@@ -1,24 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form method="post" action="">
-        {% csrf_token %}
-        {{about_form}}
-         
-            {{project_form }}
-            {{testimonial_form }}
-            {{skill_form }}
-            {{contact_form}}
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +6,19 @@
     {% block title %}
     <title>My Portfolio</title>
     {% endblock title %}
+    {%block link%}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/f674a7878b.js" crossorigin="anonymous"></script>
     {% load static%}
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'mystyle.css'%}">
+    {%endblock link%}
 </head>
 <body>
    
@@ -38,6 +28,7 @@
         </div>
         <ul>
             <li><a href="{%url 'about'%}"><img src="dashboard (2).png" alt="">&nbsp; <span>About</span></a></li>
+            <li><a href="{%url 'skill'%}"><img src="dashboard (2).png" alt="">&nbsp; <span>Skills</span></a></li>
             <li><a href="{%url 'projects'%}"><img src="reading-book (1).png" alt="">&nbsp;<span>Projects</span></a></li>
             <li><a href="{%url 'testimonial'%}"><img src="teacher2.png" alt="">&nbsp;<span>Testimonial</span></a></li>
             
@@ -59,62 +50,54 @@
                 </div>
             </div>
         </div>
+    </div>    
         {%block content%}
         <section id="about_section">
-            <h2>About Section</h2>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ about_form.as_p }}
-                <input type="submit" value="Save">
-            </form>
-        </section>
+            <h2 >About Me</h2>
+            <div  id="about_me"  class="container-fluid">
+                <div class="container">
+                 <div   id="attribute" class="row">
+                     <div id="bio" class="col-sm-6">
+                        <h1>Hello, I'm <span>Isaac Rafimbi</span></h1>
+                        <p>{{ about.about_text }} </p> <br>
+                       
+                          
+                        <button class="download">Download Resume</button>
         
-        <section id="project_section">
-            <h2>Project Section</h2>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ project_form.as_p }}
-                <input type="submit" value="Save">
-            </form>
-        </section>
+                     </div>
+                     <div id="photo" class="col-sm-6">
+                         <img src="{{ about.imageURL }}" id="mboto" alt="myphoto" width="350" height="350">
+                     </div>
+                    
+                   </div>
+                </div>
+                
+               </div>
+            </section>
+        <section id="about_section">
+            <h2 >About Me</h2>
+            <div  id="about_me"  class="container-fluid">
+                <div class="container">
+                 <div   id="attribute" class="row">
+                     <div id="bio" class="col-sm-6">
+                        <p>Number: {{ contact.number }}</p>
+                        <p>Email: {{ contact.email }}</p>
+                        <p>Github: {{ contact.github }}</p>
+                        <p>Instagram: {{ contact.instagram }}</p>
+                        <p>LinkedIn: {{ contact.linkedln }}</p>
+                        <p>Facebook: {{ contact.facebook }}</p>
+                     </div>
+                    
+                   </div>
+                </div>
+                
+               </div>   
+            </section>
         
-        <section id="testimonial_section">
-            <h2>Testimonial Section</h2>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ testimonial_form.as_p }}
-                <input type="submit" value="Save">
-            </form>
-        </section>
         
-        <section id="skill_section">
-            <h2>Skill Section</h2>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ skill_form.as_p }}
-                <input type="submit" value="Save">
-            </form>
-        </section>
-        
-        <section id="contact_section">
-            <h2>Contact Section</h2>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ contact_form.as_p }}
-                <input type="submit" value="Save">
-            </form>
-        </section>
-        
-        <section id="help_section">
-            <!-- Add your help content here -->
-        </section>
-        
-        <section id="settings_section">
-            <!-- Add your settings content here -->
-        </section>
 
         {%endblock content%}
         
-    </div>
+   
 </body>
 </html>

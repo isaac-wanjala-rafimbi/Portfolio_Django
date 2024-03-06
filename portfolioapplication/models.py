@@ -3,23 +3,39 @@ from django.db import models
 # Create your models here.
 class About(models.Model):
     about_text = models.TextField()
-    about_photo = models.ImageField(null=True, blank=True)
+    about_photo = models.ImageField(null=True, blank=True, default='default.jpg')
     resume = models.FileField(null=True, blank=True)
 
     def __str__(self):
         return "About Section"
+    
+    def imageURL(self):
+        try:
+            img=self.about_photo.url
+        except:
+            img=''
+        return img
+
 
 class Project(models.Model):
-    project_photo = models.ImageField(upload_to='project_photos/')
+    project_photo = models.ImageField(null=True, blank=True, default='default.jpg')
     name = models.CharField(max_length=100)
     project_link = models.URLField()
     readmore_link = models.URLField()
 
     def __str__(self):
         return self.name
+    
+    def imageURL(self):
+        try:
+            img=self.project_photo.url
+        except:
+            img=''
+        return img
+    
 
 class Testimonial(models.Model):
-    testimonial_photo = models.ImageField(upload_to='testimonial_photos/')
+    testimonial_photo = models.ImageField(null=True, blank=True, default='default.jpg')
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=100)
     testimonial_message = models.TextField()
@@ -30,6 +46,13 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def imageURL(self):
+        try:
+            img=self. testimonial_photo.url
+        except:
+            img=''
+        return img
 
 class Skill(models.Model):
     name = models.CharField(max_length=100)

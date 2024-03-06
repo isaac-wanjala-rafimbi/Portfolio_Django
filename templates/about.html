@@ -1,8 +1,10 @@
 {%extends 'adminPage.html'%}
 {% load static%}
-
+{%block link%}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{%endblock link%}
 {%block content%}
-<section id="about_section">
+<section style="align-items: center;">
     <h2>About Section</h2>
     <form method="post" action=""  enctype="multipart/form-data">
         {% csrf_token %}
