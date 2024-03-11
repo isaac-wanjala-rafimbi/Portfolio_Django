@@ -283,9 +283,15 @@
                                     <p class="text-primary mb-1">2022-2023</p>
                                     <h6 class="mb-0">Alupe University</h6>
                                 </div>
-                                
+                                <div class="col-sm-6">
+                                    <h5>Freelancer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022-present</p>
+                                    <h6 class="mb-0">Upwork</h6>
+                                </div>
                                 
                             </div>
+                            
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row gy-5 gx-4">
@@ -319,10 +325,19 @@
                                    {%for project_form in project_form%}
                                     <div class="col">
                                 <div class="card h-100 each">
-                                <img src="{{project_form.imageURL}}" class="card-img-top" alt="..." width="100" height="100">
+                                <img src="{{project_form.imageURL}}" class="card-img-top" alt="..." width="100" height="200">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{project_form.name}}</h5>
-                                    <p class="card-text">{{project_form.project_link}}</p>
+                                    <h5 class="card-title" style="justify-content: center;">{{project_form.name}}</h5>
+                                    <p class="card-text">{{project_form.description}}</p>
+                                    <div class="tags" style="margin-bottom: 10;">
+                                        
+                                        {% for tag in project_form.tags.all %}
+                                        <span class="badge bg-primary">{{ tag.name }}</span>
+                                    {% endfor %}
+                                       
+                                        
+                                    </div>
+                                    <a href="{{project_form.project_link}}" class="btn btn-primary">Visit Project</a>
                                 </div>
                                 </div>
                             </div>
@@ -371,9 +386,9 @@
                          <div class="col-lg-4">
                              <div class="card">
                                  <div class="box front">
-                                     <img alt="" src="img/1.jpg">
-                                     <h2>Jesicca Doe</h2>
-                                     <h4>CEO, Microsoft</h4>
+                                     <img alt="" src="{%static 'images/prof (1).jpg'%}">
+                                     <h2>John Smith</h2>
+                                     <h4>CEO</h4>
                                      <p class="socials">
                                          <i class="fa fa-facebook"></i>
                                          <i class="fa fa-twitter"></i>
@@ -384,7 +399,7 @@
                                  <div class="box back">
                                      <span class="fa fa-quote-left"></span>
                                      <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                        Isaac's WordPress expertise is unmatched. His problem-solving skills and commitment to staying updated make him a go-to for any WordPress project 
                                      </p>
                                  </div>
                              </div>
@@ -392,9 +407,9 @@
                          <div class="col-lg-4">
                              <div class="card">
                                  <div class="box front">
-                                     <img alt="" src="img/2.jpg">
-                                     <h2>Claire Chedd</h2>
-                                     <h4>CEO, Microsoft</h4>
+                                     <img alt="" src="{%static 'images/prof2.jpg'%}">
+                                     <h2>Robert Anderson</h2>
+                                     <h4>CEO</h4>
                                      <p class="socials">
                                          <i class="fa fa-facebook"></i>
                                          <i class="fa fa-twitter"></i>
@@ -405,7 +420,7 @@
                                  <div class="box back">
                                      <span class="fa fa-quote-left"></span>
                                      <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                        Isaac is an exceptional technical writer. His ability to simplify complex concepts ensures top-quality documentation every time.
                                      </p>
                                  </div>
                              </div>
@@ -413,9 +428,9 @@
                          <div class="col-md-4">
                              <div class="card">
                                  <div class="box front">
-                                     <img alt="" src="img/3.jpg">
-                                     <h2>Mary Joe</h2>
-                                     <h4>CEO, Microsoft</h4>
+                                     <img alt="" src="{%static 'images/prof3.jpg'%}">
+                                     <h2>William Davies</h2>
+                                     <h4> Creative Director</h4>
                                      <p class="socials">
                                          <i class="fa fa-facebook"></i>
                                          <i class="fa fa-twitter"></i>
@@ -426,80 +441,14 @@
                                  <div class="box back">
                                      <span class="fa fa-quote-left"></span>
                                      <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                        Isaac's web development skills are outstanding. He's creative, detail-oriented, and consistently exceeds expectations in every project.
                                      </p>
                                  </div>
                              </div>
                          </div>
                      </div>
                  </div>
-                 <div class="carousel-item">
-                     <div class="row">
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/4.jpg">
-                                     <h2>Jesicca Doe</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/5.jpg">
-                                     <h2>Claire Chedd</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-4">
-                             <div class="card">
-                                 <div class="box front">
-                                     <img alt="" src="img/6.jpg">
-                                     <h2>Mary Joe</h2>
-                                     <h4>CEO, Microsoft</h4>
-                                     <p class="socials">
-                                         <i class="fa fa-facebook"></i>
-                                         <i class="fa fa-twitter"></i>
-                                         <i class="fa fa-linkedin"></i>
-                                         <i class="fa fa-youtube"></i>
-                                     </p>
-                                 </div>
-                                 <div class="box back">
-                                     <span class="fa fa-quote-left"></span>
-                                     <p>
-                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
+                 
             <!--<div class="carousel-item">
                 <div class="row">
                     {%for testimonial in testimonial|slice:"3:"%}

@@ -6,7 +6,7 @@ from .models import About, Project, Testimonial, Skill, Contact
 def home(request):
     about = About.objects.first()  
     contact = Contact.objects.first() 
-    project_form = Project.objects.all() 
+    project_form = Project.objects.prefetch_related('tags').all()  # Fetch projects along with their tags
     testimonial= Testimonial.objects.all()
 
     return render(request, 'index.html', {'about': about, 'contact': contact, 'project_form': project_form,'testimonial': testimonial} )
